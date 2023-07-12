@@ -22,4 +22,4 @@ const CiclistaSchema = mongoose.Schema({
     }
     );
     const Ciclista = mongoose.model("ciclista",CiclistaSchema);
-    export default CiclistaSchema;
+    export default Ciclista;
