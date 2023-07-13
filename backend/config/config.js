@@ -4,14 +4,14 @@ const conectarDB = async () => {
     try {
         const connectionDB = await mongoose.connect(process.env.MONGO_URI,{
             useNewUrlParser:true,
-            useUnifiedTopology: true
+            useUnifiedTopology: true            
         });
-        const url = `conexion establecida por puerto${connectionDB.connection.port} en terminal ${connectionDB.connection.host}`;
+        const url = `conectado a la terminal mongo ${connectionDB.connection.host} y puerto ${connectionDB.connection.port}`;
         console.log(url);
     } catch (error) {
-        console.log(`${error.message}`);
-        process.exit(1);
+        console.log(error);
     }
-};
+}
+ export default conectarDB;
 
-export default conectarDB;
+ import mongoose from "mongoose";
