@@ -13,7 +13,7 @@ const PORT = process.env.PORT;
 conectarDB();
 
 app.use("/ciclistas",routerCiclistas);
-app.use("/equipos",routerGrupos);
+app.use("/equipos",routerGrupos);   
 
 
 app.listen(PORT,()=>{
