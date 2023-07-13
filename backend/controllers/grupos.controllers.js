@@ -8,7 +8,7 @@ const getGrupo = async (req,res) =>{
 const addGrupo = async (req,res) =>{
     const añadirGrupo = new Grupo(req.body);
     try {
-        const grupo = añadirGrupo.save();
+        const grupo = await añadirGrupo.save();
         res.json(grupo);
     } catch (error) {
         console.log(error);
