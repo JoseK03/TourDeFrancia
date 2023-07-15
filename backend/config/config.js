@@ -14,6 +14,6 @@ const conectarDB = async () => {
 }
  export default conectarDB;
 
- import mongoose from "mongoose";
+
 
 
