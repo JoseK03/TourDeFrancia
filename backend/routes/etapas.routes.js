@@ -4,6 +4,7 @@ import {getEtapa , addEtapa , delEtapa , updEtapa} from "../controllers/etapas.c
 const router = Router();
 
 
+
 router.get("/all", getEtapa);
 router.post("/add", addEtapa);
 router.delete("/del", delEtapa);
