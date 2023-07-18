@@ -1,4 +1,5 @@
 import Ciclista from "../models/Ciclistas.js";
+import bcryptjs from "bcryptjs";
 
 const obtenerCiclistas = async (req,res) =>{
     const ciclista = await Ciclista.find();
